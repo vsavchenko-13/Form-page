@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Informational Survey</h1>
+        <p id="description" class="description">Thank you for taking time to fill out this survey.</p>
+    </header>
+
+
+
+    <form action="blank" id="survey-form">
+        
+        <!--Name-->
+        <div >
+            <label id="name-label" for="name">Enter Your Name:</label>
+                <input class="name" type="text" name="name" id="name" placeholder="First and Second Name">
+        </div>
+        <!--Email-->
+        <div>
+            <label id="email-label" for="email">Email:</label>
+                <input id="email" class="email" type="email" placeholder="unknown@gmail.com" required>
+        </div>
+
+        <!--Numbers-->
+        <div>
+            <label for="dateofbirth">Date of Birth:</label>
+                <input class="date" type="date" id="dateofbirth" placeholder="Date of Birth" min="1920-01-01" max="2020-12-31">
+        </div>
+
+        <div>
+            <label id="number-label" for="number">How long have you lived at current address:</label>
+                <input class="yearslived" type="number" id="number" >
+        </div>
+        
+        <div>
+            <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="(333)-333-3333">
+        </div>
+
+        <!--Employement Status-->
+        <div>
+            <label for="dropdown">Employment Status:</label>    
+                <select name="employement" id="dropdown">Employment status:
+                    <option value="disabled">Choose one of the following options.</option>
+                    <option value="employed">Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="self-employed">Self-Employed</option>
+                    <option value="business-owner">Business Owner</option>
+                    <option value="retired">Retired</option>
+                </select>
+        </div>
+        
+
+        <!--Radio Buttons-->
+        <p class="radio"> <p class="radio-header" > Citizenship Status: </p>
+           
+            <div class="radio-buttons">
+                <input  type="radio" name="citizenship" id="Citizen">
+                <label id="radio" for="Citizen">Citizen</label>  
+            </div>
+           
+            <div class="radio-buttons">
+                <input  type="radio" name="citizenship" id="Permanent-Resident">
+                <label id="radio" for="Permanent-Resident">Permanent-Resident </label>  
+            </div>
+           
+            <div class="radio-buttons">
+                <input  type="radio" name="citizenship" id="Non-Citizen">
+                <label id="radio" for="Non-Citizen">Non-Citizen </label>  
+            </div>
+        
+        </p>
+        
+        <!--Area for Improvement-->
+        <div >
+            <label for="textarea">Comment Section:</label>
+                <textarea class="textarea" name="textarea" id="textarea" cols="30" rows="4" placeholder="If you have any additional comments or advice for improvement please input it here!"></textarea>
+        </div>
+        <!--Checkbox-->
+        <div class="checkbox">
+            <input class="checkbox-button" type="checkbox" name="checkbox" id="checkbox" value="submit">
+            <label class="checkbox-label" for="checkbox">I confirm all the information given is honest and correct.</label>
+        </div>
+    <!--Submit Button-->
+    <div class="button">
+        <button class="submit-button" id="submit" type="submit">Submit</button>
+    </div>    
+    </form>
+
+    <footer>
+        
+    </footer>
+
+</body>
+    
+</html>
